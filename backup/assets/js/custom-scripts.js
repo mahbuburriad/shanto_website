@@ -158,7 +158,7 @@
     
     /*
     |=================
-    | Portfolio mixin
+    | portfolio mixin
     |================
     */   
     $('#portfolio-item').mixItUp();

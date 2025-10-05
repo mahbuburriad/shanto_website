@@ -13,7 +13,7 @@ const SITE = {
   headshot: "1234.jpg",
   cvUrl: "CV of Shanto, Peal Ahamed.pdf",
   links: [
-    { label: "Department Profile", href: "https://www.depts.ttu.edu/aaec/people/Our_PhD_Students/PealAhamed_Shanto.php" },
+    { label: "Department Profile", href: "https://www.depts.ttu.edu/aaec/people/phd/PealAhamed_Shanto.php" },
     { label: "LinkedIn", href: "https://www.linkedin.com/in/peal-ahamed-shanto/" },
   ],
 };
@@ -87,7 +87,7 @@ function Shell({ children }) {
     { label: "Contact", to: "/contact", icon: Mail },
   ];
   return (
-    <div className="font-sans antialiased overflow-x-hidden">
+      <div className="min-h-screen flex flex-col justify-between font-sans antialiased overflow-x-hidden">
         <header className="sticky top-0 z-50 backdrop-blur bg-white/90 border-b">
             <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
           <NavLink to="/" className="font-semibold text-lg flex items-center gap-2">
@@ -113,8 +113,8 @@ function Shell({ children }) {
           </div>
         )}
       </header>
-      <main>{children}</main>
-      <footer className="border-t bg-white">
+          <main className="flex-grow overflow-x-hidden">{children}</main>
+          <footer className="border-t bg-white overflow-x-hidden">
         <div className="w-full px-6 py-10 grid md:grid-cols-3 gap-6 items-start">
           <div>
             <h3 className="font-semibold text-lg">Contact</h3>
